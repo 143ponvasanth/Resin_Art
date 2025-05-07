@@ -1,0 +1,126 @@
+.product-cart {
+    margin-bottom: 50px;
+}
+
+.product-heading {
+    padding-bottom: 20px;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.block-1 {
+    padding: 12px;
+    width: 24%;
+    box-sizing: border-box;
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+}
+
+.img {
+    border-radius: 6px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+}
+
+.product-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-button button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(190, 115, 116);
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-button button:hover {
+    background-color: rgb(190, 115, 116, 0.8);
+}
+
+@media screen and (max-width:768px) {
+
+    .product-heading {
+        font-size: 20px;
+        padding-bottom: 8px;
+    }
+
+    .block {
+        margin-bottom: 15px;
+    }
+
+    .product-cart {
+        margin-bottom: 30px;
+    }
+
+    .block-1 {
+        padding: 10px;
+        width: 24%;
+    }
+
+    .product-button button {
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+
+    .product-heading {
+        font-size: 18px;
+        padding-bottom: 6px;
+    }
+
+    .block {
+        margin-bottom: 10px;
+    }
+
+    .product-cart {
+        margin-bottom: 20px;
+    }
+
+    .img {
+        border-radius: 3px;
+    }
+
+
+    .block-1 {
+        padding: 5px;
+    }
+
+    .product-button button {
+        font-size: 8px;
+        padding: 8px 9px;
+    }
+
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: (0.4);
+    }
+
+    to {
+        opacity: 1;
+        scale: (1);
+    }
+}
